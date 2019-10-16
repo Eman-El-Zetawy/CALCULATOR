@@ -1,3 +1,45 @@
 body{
+    background: white;
+    color :white ;
+    margin: 0 auto;
+    padding: 8%   18%   10% 30% ;
+}
+.div{
     background: black ;
+    width: 250px ;
+    height: 420px;
+    padding: 1% 5%;
+      border-radius: 10px;
+}
+.answer{
+    font-size: 45px;
+    text-align: right;
+    margin: 9px 27px;
+    height: 52px;
+  
+
+}
+button{
+    width: 60px;
+    height: 60px ;
+    border-radius: 50%;
+    font-size: 24px;
+    border: none;
+}
+.e1{
+    background: gainsboro ;
+    color: black;
+}
+.e2{
+    background: orange ;
+    color:white;
+    font-size: 28px;
+}
+.e3{
+    background: gray ;
+    color:white;
+}
+#n0r{
+    width: 125px;
+    border-radius: 50px;
 }
