@@ -1,8 +1,9 @@
 var answer = document.getElementById("answer");
 var button = document.getElementsByTagName("button");
+var da = document.getElementsByTagName("date");
 ///////////////////////////////////////////////data 
 var s=0 , t=0 , d=0 ;
-const v=[4 , 5 , 6 , 8, 9 , 10 , 12 ,13 , 14, 16 ,17] , p=[3 , 7 , 11 , 15 ];
+const v=[4 , 5 , 6 , 8, 9 , 10 , 12 ,17,13 , 14, 16 ] , p=[3 , 7 , 11 , 15 ];
 ////////////////////////////////////////////////////////function add event listener
 button[18].addEventListener("click" ,eq);
 button[2].addEventListener("click" ,mod);
@@ -16,9 +17,9 @@ function mod (){ t/=100 ; answer.innerHTML=t; }
 function zz (){ t=0 ; s=0 ; answer.innerHTML= "" ; }
 function pm (){ t*=-1 ; answer.innerHTML=t ; }
 function fun (event){
-t+=event.target.lastChild.data;
-t*=1;
-answer.innerHTML= t ;
+t +=event.target.lastChild.data;
+ t*=1.0;
+ answer.innerHTML= t ;
 }
 function fff (event){ 
 s=t;
@@ -34,4 +35,6 @@ function eq (){
         answer.innerHTML = t ;
     
  }
+ console.log(button);
 
+// da.innerHTML=data();
