@@ -17,9 +17,14 @@ function mod (){ t/=100 ; answer.innerHTML=t; }
 function zz (){ t=0 ; s=0 ; answer.innerHTML= "" ; }
 function pm (){ t*=-1 ; answer.innerHTML=t ; }
 function fun (event){
-t +=event.target.lastChild.data;
- t*=1.0;
- answer.innerHTML= t ;
+        if(event.target.lastChild.data=='.'){
+        answer.innerHTML +=event.target.lastChild.data;
+        t=answer.innerHTML;
+        }
+        else{
+        t +=event.target.lastChild.data;
+        t*=1.0;
+        answer.innerHTML= t ;}
 }
 function fff (event){ 
 s=t;
